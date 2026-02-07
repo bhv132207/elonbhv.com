@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elon Musk: Architect of Tomorrow</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;500;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div id="canvas-container"></div>
+
+    <nav>
+        <div class="logo">The Visionary</div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#bio">Biography</a></li>
+            <li><a href="#companies">Empire</a></li>
+            <li><a href="#vision">Vision</a></li>
+        </ul>
+    </nav>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="ELON MUSK">ELON MUSK</h1>
+            <p class="subtitle">Architect of Tomorrow</p>
+            <a href="#bio" class="cta-button">Explore The Vision</a>
+        </div>
+    </section>
+
+    <section id="bio" class="section">
+        <h2 class="section-title">The Odyssey</h2>
+        <div class="bio-container">
+            <div class="bio-text">
+                <p>Elon Reeve Musk (born June 28, 1971) is a business magnate and investor. He is the founder, CEO, and
+                    Chief Engineer at SpaceX; angel investor, CEO, and Product Architect of Tesla, Inc.; founder of The
+                    Boring Company; and co-founder of Neuralink and OpenAI. With an estimated net worth of around $240
+                    billion, implies he is the wealthiest person in the world.</p>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="year">1971</span>
+                        <p><strong>Origins:</strong> Born in Pretoria, South Africa. Displayed an early aptitude for
+                            computers and entrepreneurship.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="year">1995</span>
+                        <p><strong>Zip2:</strong> Co-founded his first company, providing city guide software to
+                            newspapers. Sold to Compaq for $307 million.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="year">1999</span>
+                        <p><strong>X.com & PayPal:</strong> Founded X.com, an online bank, which merged with Confinity
+                            to become PayPal. eBay acquired it for $1.5 billion.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="year">2002</span>
+                        <p><strong>SpaceX:</strong> Founded to reduce space transportation costs and enable the
+                            colonization of Mars.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="year">2004</span>
+                        <p><strong>Tesla:</strong> Joined as chairman and product architect to accelerate the advent of
+                            sustainable transport.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="year">2016</span>
+                        <p><strong>Neuralink & The Boring Co.:</strong> Launched ventures to merge human brains with AI
+                            and solve traffic congestion.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="year">2022</span>
+                        <p><strong>Twitter / X:</strong> Acquired the social media platform to protect free speech and
+                            create the "Everything App".</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bio-image-wrapper">
+                <img src="elon 1.webp" alt="Elon Musk Portrait" class="bio-img">
+            </div>
+        </div>
+    </section>
+
+    <section id="companies" class="section">
+        <h2 class="section-title">The Empire</h2>
+        <p class="section-subtitle">Click on a venture to explore the technology.</p>
+        <div class="companies-grid">
+            <div class="company-card tesla" data-company="tesla">
+                <div class="card-inner">
+                    <i class="fa-solid fa-car-bolt icon"></i>
+                    <h3>Tesla</h3>
+                    <p>Accelerating the world's transition to sustainable energy.</p>
+                </div>
+            </div>
+            <div class="company-card spacex" data-company="spacex">
+                <div class="card-inner">
+                    <i class="fa-solid fa-rocket icon"></i>
+                    <h3>SpaceX</h3>
+                    <p>Making life multi-planetary.</p>
+                </div>
+            </div>
+            <div class="company-card neuralink" data-company="neuralink">
+                <div class="card-inner">
+                    <i class="fa-solid fa-brain icon"></i>
+                    <h3>Neuralink</h3>
+                    <p>Merging the human brain with AI.</p>
+                </div>
+            </div>
+            <div class="company-card boring" data-company="boring">
+                <div class="card-inner">
+                    <i class="fa-solid fa-road icon"></i>
+                    <h3>The Boring Co.</h3>
+                    <p>Solving traffic with 3D tunnels.</p>
+                </div>
+            </div>
+            <div class="company-card x" data-company="x">
+                <div class="card-inner">
+                    <i class="fa-brands fa-x-twitter icon"></i>
+                    <h3>X</h3>
+                    <p>The "Everything App".</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Company Details -->
+    <div id="company-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-body">
+                <!-- Content injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <section id="vision" class="section">
+        <h2 class="section-title">The Vision</h2>
+        <div class="quote-container">
+            <blockquote>"I think it is possible for ordinary people to choose to be extraordinary."</blockquote>
+            <cite>- Elon Musk</cite>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Elon Musk Tribute. Fan made with <i class="fa-solid fa-heart"></i> and Code.</p>
+    </footer>
+
+    <!-- Three.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Elfsight AI Chatbot | Untitled AI Chatbot -->
+    <script src="https://elfsightcdn.com/platform.js" async></script>
+    <div class="elfsight-app-3fdfc451-df4b-4d6d-a92e-992b196df882" data-elfsight-app-lazy></div>
+</body>
+
+</html>
